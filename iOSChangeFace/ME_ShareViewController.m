@@ -67,7 +67,6 @@ static NSString *kShareHotTags = @"(Made with @face2face_rc)#face2face";
     [navBackItem addTarget:self action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:navBackItem];
     
-    //下一级
     UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     nextBtn.frame = CGRectMake(0, 0, 44, 44);
     [nextBtn setImage:pngImagePath(@"btn_home_normal") forState:UIControlStateNormal];

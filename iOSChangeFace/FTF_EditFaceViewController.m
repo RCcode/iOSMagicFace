@@ -712,7 +712,6 @@
         backImageView.image = modelImage;
         
         [self performSelector:@selector(changeFilterValue) withObject:nil afterDelay:.1f];
-
     }
 }
 
