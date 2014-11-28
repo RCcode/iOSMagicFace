@@ -14,7 +14,7 @@
 #define kToInstagramPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"EditImage.igo"]
 #define kToMorePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"EditImage.jpg"]
 
-static NSString *kShareHotTags = @"(Made with @face2face_rc)#face2face";
+static NSString *kShareHotTags = @"#MagicFace";
 
 #import "CMethods.h"
 #import "FTF_Global.h"

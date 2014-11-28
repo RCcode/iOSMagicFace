@@ -17,8 +17,8 @@
 "Remind later" = "また後で";
 "library_not_availabel" = "アルバムを起動できません";
 "camena_not_availabel" = "カメラを起動できません";
-"user_camera_step" = "Face2Faceアクセス権のためのカメラを開いてください：電話の設定 - >プライバシー - >カメラ - > Face2Face（オープン）";
-"user_library_step" = "Face2Faceアクセス権のためのカメラを開いてください：電話の設定 - >プライバシー - >写真 ​​- > Face2Face（オープン）";
+"user_camera_step" = "Magic Faceアクセス権のためのカメラを開いてください：電話の設定 - >プライバシー - >カメラ - > Magic Face（オープン）";
+"user_library_step" = "Magic Faceアクセス権のためのカメラを開いてください：電話の設定 - >プライバシー - >写真 ​​- > Magic Face（オープン）";
 "save" = "保存";
 "share" = "シェア";
 "more" = "More";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "写真の保存に失敗しました";
 "saveOrBack" = "写真が保存されていません、編集をやめますか？";
 "cancel" = "キャンセル";
-"comment_us"="Face2Faceをご使用頂きありがとうございます。アプリをどう思いますか？";
+"comment_us"="Magic Faceをご使用頂きありがとうございます。アプリをどう思いますか？";
 "rate_now"="今すぐ評価";
 "comment_later"="また後で";
 "never_attention"="再通知しない";
-"shareContent" = "私が使っているFace2Faceは顔をいろんな物や動物と融合できちゃうアプリです。楽しいからぜひ使ってみて！！ダウンロード：http://bit.ly/1osEVGU";
+"shareContent" = "私が使っているMagic faceは顔をいろんな物や動物と融合できちゃうアプリです。楽しいからぜひ使ってみて！！ダウンロード：http://bit.ly/1zBD6yJ ";
 "free" = "フリー";
 "open" = "オンにする";
 "showWaterMark" = "使用可能なスタンプの表示";

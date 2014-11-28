@@ -17,8 +17,8 @@
 "Remind later" = "Lembrar mais tarde";
 "library_not_availabel" = "Não foi possível iniciar o álbum";
 "camena_not_availabel" = "Não foi possível iniciar a câmera";
-"user_camera_step" = "Por favor, abra a câmera para as permissões Face2Face: Configurações do telefone -> Privacidade -> Câmara -> Face2Face (aberto)";
-"user_library_step" = "Por favor, abra a câmera para as permissões Face2Face: Configurações do telefone -> Privacidade -> Fotos -> Face2Face (aberto)";
+"user_camera_step" = "Por favor, abra a câmera para as permissões Magic Face: Configurações do telefone -> Privacidade -> Câmara -> Magic Face (aberto)";
+"user_library_step" = "Por favor, abra a câmera para as permissões Magic Face: Configurações do telefone -> Privacidade -> Fotos -> Magic Face (aberto)";
 "save" = "Salvar";
 "share" = "Compartilhar";
 "more" = "Mais";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "Falha ao salvar a foto";
 "saveOrBack" = "Você ainda não salvou suas alterações, tem certeza？";
 "cancel" = "Cancelar";
-"comment_us"="Obrigado por utilizar o Face2Face, O que acha desse aplicativo?";
+"comment_us"="Obrigado por utilizar o Magic Face, O que acha desse aplicativo?";
 "rate_now"="Puntuar ahora";
 "comment_later"="Más tarde";
 "never_attention"="No volver a recordar";
-"shareContent" = "Eu estou utilizando o Face2Face, ele torna minhas fotos incriveis e mescla rostos, eu recomendo para você baixar agora. O link para baixar é:http://bit.ly/1osEVGU";
+"shareContent" = "Eu estou utilizando o Magic Face, ele torna minhas fotos incriveis e mescla rostos, eu recomendo para você baixar agora. O link para baixar é:http://bit.ly/1zBD6yJ ";
 "free" = "livre";
 "open" = "ligar";
 "showWaterMark" = "Adicionar aplicação Marca D'água";

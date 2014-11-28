@@ -17,8 +17,8 @@
 "Remind later" = "Rappeler plus tard";
 "library_not_availabel" = "Impossible de démarrer l'album";
 "camena_not_availabel" = "Impossible de démarrer l'appareil photo";
-"user_camera_step" = "S'il vous plaît ouvrir l'appareil photo pour les autorisations de Face2Face: Paramètres du téléphone -> Confidentialité -> Caméra -> Face2Face (ouverte)";
-"user_library_step" = "S'il vous plaît ouvrir l'appareil photo pour les autorisations de Face2Face: Paramètres du téléphone -> Confidentialité -> Photos -> Face2Face (ouverte)";
+"user_camera_step" = "S'il vous plaît ouvrir l'appareil photo pour les autorisations de Magic Face: Paramètres du téléphone -> Confidentialité -> Caméra -> Magic Face (ouverte)";
+"user_library_step" = "S'il vous plaît ouvrir l'appareil photo pour les autorisations de Magic Face: Paramètres du téléphone -> Confidentialité -> Photos -> Magic Face (ouverte)";
 "save" = "Sauvegarder";
 "share" = "Partager";
 "more" = "Plus";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "La sauvegarde photo a échoué";
 "saveOrBack" = "Vous n'avez pas enregistré vos modifications, êtes-vous sûr?";
 "cancel" = "Annuler";
-"comment_us"="Merci d'utiliser Face2Face, que pensez-vous de cette app ?";
+"comment_us"="Merci d'utiliser Magic Face, que pensez-vous de cette app ?";
 "rate_now"="Evaluer maintenant";
 "comment_later"="Rappeler plus tard";
 "never_attention"="Non merci";
-"shareContent" = "J'utilise Face2Face, il fait de superbes photos qui mélangent les visages, je vous conseille de l'utiliser. L'adresse de téléchargement est:http://bit.ly/1osEVGU";
+"shareContent" = "J'utilise Magic face, il fait de superbes photos qui mélangent les visages, je vous conseille de l'utiliser. L'adresse de téléchargement est:http://bit.ly/1zBD6yJ ";
 "free" = "gratuit";
 "open" = "allumer";
 "showWaterMark" = "Ajouter l'app watermark";

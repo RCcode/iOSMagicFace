@@ -17,8 +17,8 @@
 "Remind later" = "Ricordamelo più tardi";
 "library_not_availabel" = "Impossibile avviare l'album";
 "camena_not_availabel" = "Impossibile avviare la fotocamera";
-"user_camera_step" = "Si prega di aprire la fotocamera per le autorizzazioni Face2Face: Impostazioni telefono -> Privacy -> Camera -> Face2Face (aperto)";
-"user_library_step" = "Si prega di aprire la fotocamera per le autorizzazioni Face2Face: Impostazioni telefono -> Privacy -> Foto -> Face2Face (aperto)";
+"user_camera_step" = "Si prega di aprire la fotocamera per le autorizzazioni Magic Face: Impostazioni telefono -> Privacy -> Camera -> Magic Face (aperto)";
+"user_library_step" = "Si prega di aprire la fotocamera per le autorizzazioni Magic Face: Impostazioni telefono -> Privacy -> Foto -> Magic Face (aperto)";
 "save" = "Salva";
 "share" = "Condividi";
 "more" = "Altro";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "Salvataggio foto non riuscito";
 "saveOrBack" = "Non hai salvato le modifiche, sei sicuro?";
 "cancel" = "No";
-"comment_us"="grazie per aver usato Face2Face, cosa ne pensi di questa applicazione?";
+"comment_us"="grazie per aver usato Magic Face, cosa ne pensi di questa applicazione?";
 "rate_now"="Vota ora";
 "comment_later"="Ricordamelo più tardi";
 "never_attention"="No grazie";
-"shareContent" = "Sto utilizzando Face2Face, fa foto incredibili che si fondono affronta insieme, vi consiglio di usarlo. L'indirizzo di download è:http://bit.ly/1osEVGU";
+"shareContent" = "Sto utilizzando Magic Face, fa foto incredibili che si fondono affronta insieme, vi consiglio di usarlo. L'indirizzo di download è:http://bit.ly/1zBD6yJ ";
 "free" = "gratuito";
 "open" = "accendere";
 "showWaterMark" = "Aggiungi design dell'applicazione";

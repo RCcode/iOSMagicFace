@@ -17,8 +17,8 @@
 "Remind later" = "Más tarde";
 "library_not_availabel" = "No se puede iniciar el álbum";
 "camena_not_availabel" = "No se puede iniciar la cámara";
-"user_camera_step" = "Por favor, abra la cámara de los permisos Face2Face: Configuración del teléfono -> Privacidad -> Cámara -> Face2Face (abierto)";
-"user_library_step" = "Por favor, abra la cámara de los permisos Face2Face: Configuración del teléfono -> Privacidad -> Fotos -> Face2Face (abierto)";
+"user_camera_step" = "Por favor, abra la cámara de los permisos Magic Face: Configuración del teléfono -> Privacidad -> Cámara -> Magic Face (abierto)";
+"user_library_step" = "Por favor, abra la cámara de los permisos Magic Face: Configuración del teléfono -> Privacidad -> Fotos -> Magic Face (abierto)";
 "save" = "Guardar";
 "share" = "Compartir";
 "more" = "Más";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "Fallo al guardar la foto";
 "saveOrBack" = "No has guardado cambios, ¿deseas eliminar la edición?";
 "cancel" = "No";
-"comment_us"="Gracias por usar Face2Face, ¿Qué piensas de esta app?";
+"comment_us"="Gracias por usar Magic face, ¿Qué piensas de esta app?";
 "rate_now"="Puntuar ahora";
 "comment_later"="Más tarde";
 "never_attention"="No volver a recordar";
-"shareContent" = "Estoy usando Face2Face, haz increibles fotos para mezclar caras juntas, recomiendo que lo uses, La dirección de descarga es :http://bit.ly/1osEVGU";
+"shareContent" = "Estoy usando Magic face, haz increibles fotos para mezclar caras juntas, recomiendo que lo uses, La dirección de descarga es :http://bit.ly/1zBD6yJ ";
 "free" = "libre";
 "open" = "encender";
 "showWaterMark" = "Add app watermark";

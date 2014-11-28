@@ -99,7 +99,7 @@
     CGRect rect = CGRectZero;
     rect.size = imageView.image.size;
     
-    UIBezierPath *aPath;
+    UIBezierPath *aPath = [UIBezierPath bezierPath];
     
     if (maskedImage == nil)
     {
@@ -109,11 +109,8 @@
             UIRectFill(rect);
             [[UIColor whiteColor] setFill];
             
-            aPath = [UIBezierPath bezierPath];
-            
             CGPoint p1 = [MZCroppableView convertCGPoint:[[_points objectAtIndex:0] CGPointValue] fromRect1:imageView.frame.size toRect2:imageView.image.size];
             [aPath moveToPoint:CGPointMake(p1.x, p1.y)];
-            
             for (uint i=1; i<_points.count; i++)
             {
                 CGPoint p = [MZCroppableView convertCGPoint:[[_points objectAtIndex:i] CGPointValue] fromRect1:imageView.frame.size toRect2:imageView.image.size];
@@ -124,7 +121,11 @@
         }
         
         maskedImage = UIGraphicsGetImageFromCurrentImageContext();
+        NSString *path4 = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"image"];
+        [UIImagePNGRepresentation(maskedImage) writeToFile:path4 atomically:YES];
         maskedImage = [self fuzzyImage:maskedImage];
+        NSString *path5 = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"image2"];
+        [UIImagePNGRepresentation(maskedImage) writeToFile:path5 atomically:YES];
     }
     
     UIGraphicsEndImageContext();

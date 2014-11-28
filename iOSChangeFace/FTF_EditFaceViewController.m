@@ -232,9 +232,9 @@
     backImageView.image = [FTF_Global shareGlobal].modelImage;
     [bottomView addSubview:backImageView];;
     
-    //放大镜
     acBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     acBackView.layer.masksToBounds = YES;
+    //放大镜
     backView = [[ACMagnifyingView alloc] initWithFrame:_imageRect];
     backView.transform = CGAffineTransformMakeRotation([FTF_Global shareGlobal].rorationDegree);
     [acBackView addSubview:backView];
@@ -464,7 +464,7 @@
         }
         
     }
-
+    
     [self adjustViews:_libaryImage];
 
     if (self.modelSlider != nil)

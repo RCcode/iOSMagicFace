@@ -17,8 +17,8 @@
 "Remind later" = "Remind later";
 "library_not_availabel" = "Unable to start the album";
 "camena_not_availabel" = "Unable to start the camera";
-"user_camera_step" = "Please open the camera for the Face2Face permissions: Phone Settings -> Privacy -> Camera -> Face2Face (open)";
-"user_library_step" = "Please open the camera for the Face2Face permissions: Phone Settings -> Privacy -> Photos -> Face2Face (open)";
+"user_camera_step" = "Please open the camera for the Magic Face permissions: Phone Settings -> Privacy -> Camera -> Magic Face (open)";
+"user_library_step" = "Please open the camera for the Magic Face permissions: Phone Settings -> Privacy -> Photos -> Magic Face (open)";
 "save" = "Save";
 "share" = "Share";
 "more" = "More";
@@ -31,10 +31,10 @@
 "saved_in_album_Fail" = "Failed to save photo";
 "saveOrBack" = "You haven't saved your changes, are you sure?";
 "cancel" = "Cancel";
-"comment_us" = "Thanks for using Face2Face, what do you think of this app?";
+"comment_us" = "Thanks for using Magic Face, what do you think of this app?";
 "comment_later" = "Remind later";
 "never_attention" = "No thanks";
-"shareContent" = "I'm using Face2Face, it makes amazing photos that blend faces together, I recommend you use it. The download address is:http://bit.ly/1osEVGU";
+"shareContent" = "I'm using Magic face, it makes amazing photos that blend faces together, I recommend you use it. The download address is:http://bit.ly/1zBD6yJ ";
 "free" = "FREE";
 "open" = "OPEN";
 "showWaterMark" = "Add app watermark";

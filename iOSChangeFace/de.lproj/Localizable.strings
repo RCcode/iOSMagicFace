@@ -17,8 +17,8 @@
 "Remind later" = "Später erinnern";
 "library_not_availabel" = "Kann das Album zu beginnen";
 "camena_not_availabel" = "Kann die Kamera zu starten";
-"user_camera_step" = "Bitte öffnen Sie die Kamera für die Face2Face Berechtigungen: Telefon-Einstellungen -> Datenschutz -> Kamera -> Face2Face (offen)";
-"user_library_step" = "Bitte öffnen Sie die Kamera für die Face2Face Berechtigungen: Telefon-Einstellungen -> Datenschutz -> Fotos -> Face2Face (offen)";
+"user_camera_step" = "Bitte öffnen Sie die Kamera für die Magic Face Berechtigungen: Telefon-Einstellungen -> Datenschutz -> Kamera -> Magic Face (offen)";
+"user_library_step" = "Bitte öffnen Sie die Kamera für die Magic Face Berechtigungen: Telefon-Einstellungen -> Datenschutz -> Fotos -> Magic Face (offen)";
 "save" = "Sichern";
 "share" = "Teilen";
 "more" = "Mehr";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "Speichern des Photos fehlgeschlagen";
 "saveOrBack" = "Du hast deine Änderungen nicht gesichert , bist du sicher?";
 "cancel" = "Abrechen";
-"comment_us"="Vielen Dank für dein Vertrauen in Face2Face, was hältst du von der App?";
+"comment_us"="Vielen Dank für dein Vertrauen in Magic Face, was hältst du von der App?";
 "rate_now"="Jetzt bewerten";
 "comment_later"="Später erinnern";
 "never_attention"="Nicht mehr erinnern";
-"shareContent" = "Ich hab Face2Face, mit dieser App kannst du atemberaubende Photos machen und Gesichter miteinander verschmelzen, probier sie doch gleich mal aus. Hier kanst du die App downloaden:http://bit.ly/1osEVGU";
+"shareContent" = "Ich hab Magic face, mit dieser App kannst du atemberaubende Photos machen und Gesichter miteinander verschmelzen, probier sie doch gleich mal aus. Hier kanst du die App downloaden:http://bit.ly/1zBD6yJ ";
 "free" = "kostenlos";
 "open" = "einschalten";
 "showWaterMark" = "App Wasseryeichen hinzufügen";

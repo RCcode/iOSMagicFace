@@ -31,8 +31,8 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define appleID @"904923023"
-static int moreAppID = 20063;
+#define appleID @"946302538"
+static int moreAppID = 20080;
 
 enum MaterialModelType{
     CrossBonesModel = 0,

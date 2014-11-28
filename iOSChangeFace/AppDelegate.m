@@ -22,7 +22,7 @@
 #import "UIDevice+DeviceInfo.h"
 #import <AdSupport/AdSupport.h>
 #define AdMobID @"ca-app-pub-3747943735238482/7117549852"
-#define UMengKey @"53d607ff56240b5d11055ecd"
+#define UMengKey @"5477e76bfd98c51dbb000031"
 #define FlurryAppKey @"Q85WBVSCNNNC284VSQ8K"
 #define UDKEY_ShareCount @"shareCount"
 
@@ -162,8 +162,19 @@
     
 }
 
-- (void)registNotification{
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+- (void)registNotification
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+    {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings
+                                                                             settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
+                                                                             categories:nil]];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+         (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
+    }
 }
 
 - (void)cancelNotification{

@@ -17,8 +17,8 @@
 "Remind later" = "Ingatkan lagi nanti";
 "library_not_availabel" = "Tidak dapat membuka album";
 "camena_not_availabel" = "Tidak dapat memulai kamera";
-"user_camera_step" = "Silakan memungkinkan izin kamera untuk Face2Face : Pengaturan telepon -> Privasi -> Kamera -> Face2Face (Buka)";
-"user_library_step" = "Silakan memungkinkan izin album untuk  Face2Face : Pengaturan telepon -> Privasi -> Foto ->  Face2Face (Buka)";
+"user_camera_step" = "Silakan memungkinkan izin kamera untuk Magic Face : Pengaturan telepon -> Privasi -> Kamera -> Magic Face (Buka)";
+"user_library_step" = "Silakan memungkinkan izin album untuk  Magic Face : Pengaturan telepon -> Privasi -> Foto ->  Magic Face (Buka)";
 "save" = "Simpan";
 "share" = "Berbagi";
 "more" = "Lebih lagi";
@@ -35,7 +35,7 @@
 "rate_now"="Nilai sekarang";
 "comment_later"="Ingatkan lagi nanti";
 "never_attention"="Tidak terima kasih";
-"shareContent" = "Saya menggunakan WajahkeWajah, ini membuat foto menakjubkan yang memadukan wajah bersama-sama, saya sarankan Anda menggunakannya. Alamat unduhan adalah :http://bit.ly/1osEVGU";
+"shareContent" = "Saya menggunakan WajahkeWajah, ini membuat foto menakjubkan yang memadukan wajah bersama-sama, saya sarankan Anda menggunakannya. Alamat unduhan adalah :http://bit.ly/1zBD6yJ ";
 "free" = "gratis";
 "open" = "menghidupkan";
 "showWaterMark" = "Aplikasi tampilan watermark";

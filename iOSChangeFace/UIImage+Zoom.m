@@ -134,7 +134,6 @@
     
     if(newImage == nil) NSLog(@"could not scale image");
     
-    
     return newImage ;
 }
 

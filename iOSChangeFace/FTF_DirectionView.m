@@ -259,7 +259,6 @@
 
 - (void)btnClick:(FTF_Button *)btn
 {
-    
     for (UIView *subView in [btn.superview subviews])
     {
         if ([subView isKindOfClass:[FTF_Button class]])

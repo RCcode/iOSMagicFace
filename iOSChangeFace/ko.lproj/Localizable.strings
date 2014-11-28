@@ -17,8 +17,8 @@
 "Remind later" = "나중에 하기";
 "library_not_availabel" = "앨범을 시작할 수 없습니다";
 "camena_not_availabel" = "카메라를 시작할 수 없습니다";
-"user_camera_step" = "Face2Face 권한 카메라를여십시오 : 전화 설정 -> 개인 정보 보호 -> 카메라 -> Face2Face (오픈)";
-"user_library_step" = "Face2Face 권한 카메라를여십시오 : 전화 설정 -> 개인 정보 보호 -> 사진 -> Face2Face (오픈)";
+"user_camera_step" = "Magic Face 권한 카메라를여십시오 : 전화 설정 -> 개인 정보 보호 -> 카메라 -> Magic Face (오픈)";
+"user_library_step" = "Magic Face 권한 카메라를여십시오 : 전화 설정 -> 개인 정보 보호 -> 사진 -> Magic Face (오픈)";
 "save" = "저장하기";
 "share" = "공유하기";
 "more" = "더보기";
@@ -31,11 +31,11 @@
 "saved_in_album_Fail" = "사진 저장 실패";
 "saveOrBack" = "변경된 내용을 저장하지 않고 종료하시겠습니까? ";
 "cancel" = "취소";
-"comment_us"="Face2Face 어플을 사용해 주셔서 감사합니다. 위 어플을 어떻게 평가하십니까?";
+"comment_us"="Magic Face 어플을 사용해 주셔서 감사합니다. 위 어플을 어떻게 평가하십니까?";
 "rate_now"="평가하기";
 "comment_later"="나중에 하기";
 "never_attention"="다시 보지 않기";
-"shareContent" = "지금 사용중인 Face2Face 얼굴 합성 어플 추천합니다. 한번 써보세요. 다운로드 주소:http://bit.ly/1osEVGU ";
+"shareContent" = "지금 사용중인 Magic Face 얼굴 합성 어플 추천합니다. 한번 써보세요. 다운로드 주소:http://bit.ly/1zBD6yJ  ";
 "free" = "무료";
 "open" = "켜";
 "showWaterMark" = "사진에 로고 표시 ";
