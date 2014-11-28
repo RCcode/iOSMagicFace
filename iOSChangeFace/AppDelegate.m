@@ -354,6 +354,7 @@
             break;
         case 11:
         {
+            NSLog(@"dic......%@",dic);
             NSArray *infoArray = [dic objectForKey:@"list"];
             NSMutableArray *isDownArray = [NSMutableArray arrayWithCapacity:0];
             NSMutableArray *noDownArray = [NSMutableArray arrayWithCapacity:0];

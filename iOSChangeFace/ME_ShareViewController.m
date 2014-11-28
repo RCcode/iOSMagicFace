@@ -331,7 +331,7 @@ static NSString *kShareHotTags = @"#MagicFace";
 #pragma mark UITableViewDelegate And UITableDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 170.f;
+    return 228.f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -364,7 +364,8 @@ static NSString *kShareHotTags = @"#MagicFace";
     titleLabel.textAlignment = NSTextAlignmentLeft;
     [cell.contentView addSubview:titleLabel];
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(15, labelsize.height + 10, 290, 120)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(15, labelsize.height + 10, 290, 178)];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     [imageView sd_setImageWithURL:[NSURL URLWithString:appInfo.bannerUrl] placeholderImage:nil];
     [cell.contentView addSubview:imageView];
 
