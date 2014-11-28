@@ -174,7 +174,7 @@
                 [blockActivityVC dismissViewControllerAnimated:YES completion:nil];
                 
                 [[UIApplication sharedApplication].keyWindow addSubview:[FTF_Global shareGlobal].bannerView];
-                [FTF_Global shareGlobal].bannerView.hidden = NO;
+                [FTF_Global shareGlobal].bannerView.hidden  = NO;
             };
             [self presentViewController:activityVC animated:YES completion:nil];
         }

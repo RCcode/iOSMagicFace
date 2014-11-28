@@ -14,43 +14,52 @@
 {
     self = [super init];
     
-    [self setValuesForKeysWithDictionary:dic];
+    if (self)
+    {
+        self.bannerUrl = @"";
+        self.iconUrl = @"";
+        self.openUrl = @"";
+        self.downUrl = @"";
+        
+        [self setValuesForKeysWithDictionary:dic];
+    }
     
     return self;
 }
 
 - (void)setValuesForKeysWithDictionary:(NSDictionary *)keyedValues
 {
+    NSLog(@"keyedValues......%@",keyedValues);
+    
     for (NSString *key in [keyedValues allKeys])
     {
-        if ([key isEqualToString:@"openUrl"])
+        if ([key isEqualToString:@"openUrl"] && [[keyedValues objectForKey:@"openUrl"] isKindOfClass:[NSNull class]])
         {
-            NSURL *url = [NSURL URLWithString:[keyedValues objectForKey:@"openUrl"]];
-            if ([[UIApplication sharedApplication] canOpenURL:url])
-            {
-                self.isHave = YES;
-            }
-            else
-            {
-                self.isHave = NO;
-            }
+            self.openUrl = @"";
         }
-        if ([keyedValues objectForKey:key] != [NSNull null])
+        else if ([key isEqualToString:@"iconUrl"] && [[keyedValues objectForKey:@"iconUrl"] isKindOfClass:[NSNull class]])
+        {
+            self.iconUrl = @"";
+        }
+        else if ([key isEqualToString:@"bannerUrl"] && [[keyedValues objectForKey:@"bannerUrl"] isKindOfClass:[NSNull class]])
+        {
+            self.bannerUrl = @"";
+        }
+        else if ([key isEqualToString:@"downUrl"] && [[keyedValues objectForKey:@"downUrl"] isKindOfClass:[NSNull class]])
+        {
+            self.downUrl = @"";
+        }
+        else if (![[keyedValues objectForKey:key] isKindOfClass:[NSNull class]])
         {
             [self setValue:[keyedValues objectForKey:key] forKey:key];
         }
-        else
-        {
-            if ([key isEqualToString:@"price"])
-            {
-                [self setValue:@"0" forKey:key];
-            }
-            else
-            {
-                [self setValue:@"" forKey:key];
-            }
-        }
     }
 }
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    
+}
+
 
 @end

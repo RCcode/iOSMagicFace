@@ -354,14 +354,13 @@
             break;
         case 11:
         {
-            NSLog(@"dic......%@",dic);
             NSArray *infoArray = [dic objectForKey:@"list"];
             NSMutableArray *isDownArray = [NSMutableArray arrayWithCapacity:0];
             NSMutableArray *noDownArray = [NSMutableArray arrayWithCapacity:0];
             for (NSDictionary *infoDic in infoArray)
             {
                 RC_AppInfo *appInfo = [[RC_AppInfo alloc]initWithDictionary:infoDic];
-                if (appInfo.isHave)
+                if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]])
                 {
                     [isDownArray addObject:appInfo];
                 }
@@ -464,26 +463,37 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     NSLog(@"即将进入前台");
-    
     [self cancelNotification];
     
     //优先取全局变量中的数据，取不到 再取数据库中的
-    NSMutableArray *appInfoArr = nil;
-    if([FTF_Global shareGlobal].appsArray != nil){
-        appInfoArr = [FTF_Global shareGlobal].appsArray;
-    }else{
-        appInfoArr = [[ME_SQLMassager shareStance] getAllData];
+    NSMutableArray *temp_appInfoArr = [[ME_SQLMassager shareStance] getAllData];
+    NSMutableArray *appInfoArr = [NSMutableArray arrayWithCapacity:0];
+    NSMutableArray *un_down_datasource = [NSMutableArray arrayWithCapacity:0];
+    NSMutableArray *have_down_datasource = [NSMutableArray arrayWithCapacity:0];
+    for (RC_AppInfo *appInfo in temp_appInfoArr)
+    {
+        NSURL *url = [NSURL URLWithString:appInfo.openUrl];
+        if ([[UIApplication sharedApplication] canOpenURL:url])
+        {
+            [have_down_datasource addObject:appInfo];
+        }
+        else
+        {
+            [un_down_datasource addObject:appInfo];
+        }
     }
+    
+    [appInfoArr addObjectsFromArray:un_down_datasource];
+    [appInfoArr addObjectsFromArray:have_down_datasource];
     
     if(appInfoArr == nil)
         return;
     
-    for (RC_AppInfo *appInfo in appInfoArr) {
-        appInfo.isHave = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]];
-        [[ME_SQLMassager shareStance] updagteAppInfo:appInfo.appId withIsHaveDownLoad:appInfo.isHave];
-    }
-    
+    [FTF_Global shareGlobal].appsArray = nil;
     [FTF_Global shareGlobal].appsArray = appInfoArr;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadMoreApp" object:nil];
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

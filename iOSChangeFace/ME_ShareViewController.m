@@ -399,7 +399,7 @@ static NSString *kShareHotTags = @"#MagicFace";
     for (NSDictionary *infoDic in infoArray)
     {
         RC_AppInfo *appInfo = [[RC_AppInfo alloc]initWithDictionary:infoDic];
-        if (appInfo.isHave)
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]])
         {
             [isDownArray addObject:appInfo];
         }

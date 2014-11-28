@@ -20,8 +20,8 @@
 @property (nonatomic ,strong) NSString *packageName;
 @property (nonatomic ,strong) NSString *price;
 @property (nonatomic ,strong) NSString *openUrl;
-@property (nonatomic ,assign) BOOL isHave;
 @property (nonatomic ,strong) NSString *appDesc;
+@property (nonatomic ,assign) int state;
 
 - (id)initWithDictionary:(NSDictionary *)dic;
 

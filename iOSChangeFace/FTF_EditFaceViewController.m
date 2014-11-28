@@ -162,7 +162,6 @@
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
 
     [self.navigationItem setRightBarButtonItems:@[negativeSeperator,shareItem,btnItem]];
-    
 }
 
 #pragma mark -

@@ -31,7 +31,7 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>RCChangeFaceApp</string>
+				<string>RCMagicFaceApp</string>
 			</array>
 		</dict>
 	</array>

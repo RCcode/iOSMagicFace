@@ -27,7 +27,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _public_Global = [[[self class] alloc] init];
-        _public_Global.appsArray = [[NSMutableArray alloc]init];
         _public_Global.isOn = YES;
         _public_Global.modelType = (MaterialModelType)0;
     });

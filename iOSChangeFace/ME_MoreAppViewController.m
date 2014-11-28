@@ -37,13 +37,14 @@
 - (void)dealloc
 {
     appInfoTableView = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"More App";
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateState) name:@"reloadMoreApp" object:nil];
+    self.title = @"More Apps";
     CGFloat itemWH = 44;
     UIButton *navBackItem = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, itemWH, itemWH)];
     [navBackItem setImage:pngImagePath(@"btn_back_black_normal") forState:UIControlStateNormal];
@@ -96,19 +97,18 @@
         
 }
 
-- (void)viewDidAppear:(BOOL)animated{
+- (void)viewDidAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
-    
     _timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateState) userInfo:nil repeats:YES];
     [_timer fire];
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated
+{
     [super viewWillDisappear:animated];
-    
     [_timer invalidate];
     _timer = nil;
-    [[SDImageCache sharedImageCache] clearMemory];
 }
 
 - (void)updateState
@@ -146,6 +146,8 @@
     
     cell.delegate = self;
     
+    if ([[FTF_Global shareGlobal].appsArray count] <= 0) return nil;
+    
     RC_AppInfo *appInfo = [[FTF_Global shareGlobal].appsArray objectAtIndex:indexPath.row];
     
     CGSize appNameSize = sizeWithContentAndFont(appInfo.appName, CGSizeMake(150, 80), 14);
@@ -155,11 +157,11 @@
     }
     else
     {
-        [cell.titleLabel setFrame:CGRectMake(cell.titleLabel.frame.origin.x, cell.titleLabel.frame.origin.y - 6, appNameSize.width, appNameSize.height)];
+        [cell.titleLabel setFrame:CGRectMake(cell.titleLabel.frame.origin.x, 8, appNameSize.width, appNameSize.height)];
     }
     cell.titleLabel.text = appInfo.appName;
     cell.typeLabel.text = appInfo.appCate;
-    [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:appInfo.iconUrl] placeholderImage:nil];
+    [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:appInfo.iconUrl] placeholderImage:nil options:SDWebImageRetryFailed | SDWebImageLowPriority completed:nil];
     cell.commentLabel.text = [NSString stringWithFormat:@"(%d)",appInfo.appComment];
     NSString *title = @"";
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]])
@@ -192,7 +194,7 @@
     RC_AppInfo *appInfo = [[FTF_Global shareGlobal].appsArray objectAtIndex:indexPath.row];
     [FTF_Global event:@"More" label:[NSString stringWithFormat:@"%d",appInfo.appId]];
     
-    if (appInfo.isHave)
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]])
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appInfo.openUrl]];
     }
@@ -223,7 +225,7 @@
     for (NSDictionary *infoDic in infoArray)
     {
         RC_AppInfo *appInfo = [[RC_AppInfo alloc]initWithDictionary:infoDic];
-        if (appInfo.isHave)
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appInfo.openUrl]])
         {
             [isDownArray addObject:appInfo];
         }
@@ -271,7 +273,6 @@
 {
     
 }
-
 
 - (void)didReceiveMemoryWarning
 {

@@ -107,7 +107,7 @@
     [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [requestSerializer setTimeoutInterval:30];
 
-    [self requestServiceWithPost:@"getIOSAppList.do" jsonRequestSerializer:requestSerializer  isRegisterToken:NO];
+    [self requestServiceWithPost:@"getIOSAppListNew.do" jsonRequestSerializer:requestSerializer  isRegisterToken:NO];
 }
 
 #pragma mark -

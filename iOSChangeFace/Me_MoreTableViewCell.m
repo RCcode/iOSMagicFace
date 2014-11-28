@@ -38,10 +38,8 @@
 
 - (IBAction)installBtnClick:(id)sender
 {
-    UIButton *btn = (UIButton *)sender;
-    RC_AppInfo *appInfo = [[FTF_Global shareGlobal].appsArray objectAtIndex:btn.tag];
-    [FTF_Global event:@"More" label:[NSString stringWithFormat:@"%d",appInfo.appId]];
-    if (self.appInfo.isHave)
+    [FTF_Global event:@"More" label:[NSString stringWithFormat:@"%d",self.appInfo.appId]];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:self.appInfo.openUrl]])
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.appInfo.openUrl]];
     }
