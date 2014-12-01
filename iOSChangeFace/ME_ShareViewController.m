@@ -416,8 +416,6 @@ static NSString *kShareHotTags = @"#MagicFace";
     //判断是否有新应用
     if ([FTF_Global shareGlobal].appsArray.count > 0) {
         NSMutableArray *dataArray = [[ME_SQLMassager shareStance] getAllData];
-        NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
-        
         for (RC_AppInfo *app in [FTF_Global shareGlobal].appsArray)
         {
             BOOL isHave = NO;
@@ -428,16 +426,17 @@ static NSString *kShareHotTags = @"#MagicFace";
                     isHave = YES;
                 }
             }
-            if (!isHave) {
-                [array addObject:app];
+            if (!isHave)
+            {
+                [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"MoreAPP"];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"addMoreImage" object:nil];
+                break;
             }
         }
         
         //插入新数据
-        if (array.count > 0)
-        {
-            [[ME_SQLMassager shareStance] insertAppInfo:array];
-        }
+        [[ME_SQLMassager shareStance] deleteAllData];
+        [[ME_SQLMassager shareStance] insertAppInfo:[FTF_Global shareGlobal].appsArray];
     }
     [appMoretableView reloadData];
 }
