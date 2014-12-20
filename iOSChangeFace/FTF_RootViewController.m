@@ -122,7 +122,6 @@
     }
     [FTF_Global shareGlobal].bannerView.hidden = YES;
     [self selectCamenaType:UIImagePickerControllerSourceTypePhotoLibrary];
-    
 }
 
 - (void)selectCamenaType:(NSInteger)sourceType
@@ -236,7 +235,6 @@
      } failureBlock:^(NSError *err) {
          NSLog(@"Error: %@",[err localizedDescription]);
      }];
-    
 }
 
 @end

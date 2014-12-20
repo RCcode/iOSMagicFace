@@ -606,7 +606,6 @@
 #pragma mark 调整模糊位置和模糊度
 - (void)sliderValueChanged:(UISlider *)slider
 {
-
     switch (slider.tag) {
         case 0:
         {

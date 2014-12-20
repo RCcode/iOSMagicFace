@@ -18,7 +18,6 @@
         
         self.backgroundColor = [UIColor clearColor]; //背景颜色设置，设置为clearColor 背景透明
         
-        
         width = frame.size.width;
         height= frame.size.height;
         

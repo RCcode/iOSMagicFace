@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FTF_RootViewController">
@@ -10,7 +11,6 @@
                 <outlet property="camenaBtn" destination="dkz-Ky-gpt" id="CQM-2D-tQP"/>
                 <outlet property="libaryBtn" destination="YIj-Gg-Aj5" id="6he-H6-CpA"/>
                 <outlet property="menuBtn" destination="tzn-aR-Y43" id="TpZ-Uc-T2I"/>
-                <outlet property="moreBtn" destination="lqu-Id-Z9r" id="f5d-Z9-Zd3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +24,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dkz-Ky-gpt">
-                    <rect key="frame" x="134" y="449" width="54" height="54"/>
+                    <rect key="frame" x="213" y="448" width="54" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="icon_camera_normal.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,7 +35,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YIj-Gg-Aj5">
-                    <rect key="frame" x="31" y="449" width="54" height="54"/>
+                    <rect key="frame" x="46" y="448" width="54" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="icon_photo_normal.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,17 +43,6 @@
                     <state key="highlighted" image="icon_photo_pressed.png"/>
                     <connections>
                         <action selector="openLibaryClick:" destination="-1" eventType="touchUpInside" id="VgT-GJ-fse"/>
-                    </connections>
-                </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lqu-Id-Z9r">
-                    <rect key="frame" x="235" y="449" width="54" height="54"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="icon_moreapp_normal.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted" image="icon_moreapp__pressed.png"/>
-                    <connections>
-                        <action selector="moreApp:" destination="-1" eventType="touchUpInside" id="61u-GZ-WiZ"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tzn-aR-Y43">
@@ -68,8 +57,6 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
@@ -77,9 +64,12 @@
         <image name="icon_camera_normal.png" width="54" height="54"/>
         <image name="icon_camera_pressed.png" width="54" height="54"/>
         <image name="icon_more_pressed.png" width="44" height="44"/>
-        <image name="icon_moreapp__pressed.png" width="54" height="54"/>
-        <image name="icon_moreapp_normal.png" width="54" height="54"/>
         <image name="icon_photo_normal.png" width="54" height="54"/>
         <image name="icon_photo_pressed.png" width="54" height="54"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
